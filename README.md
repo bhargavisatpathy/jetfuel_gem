@@ -1,6 +1,6 @@
 # Jetfuel
 
-TODO: Write a gem description
+This is my first gem to consume JetFuel api to shorten url
 
 ## Installation
 
@@ -20,7 +20,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+jf = JetFuel.new 'http://SERVER'
+jf.shorten "http://jumpstartlab.com" # => "http://SERVER/AFGAD"
+```
 
 ## Contributing
 
