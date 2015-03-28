@@ -1,6 +1,6 @@
 # Jetfuel
 
-This is my first gem to consume JetFuel api to shorten url
+This is a gem to consume JetFuel api to shorten url
 
 ## Installation
 

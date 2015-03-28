@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Jetfuel::VERSION
   spec.authors       = ["Bhargavi Satpathy"]
   spec.email         = ["bhargavisatpathy@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{This is a gem to consume JetFuel api to shorten url}
+  spec.description   = %q{This is a gem to consume JetFuel api to shorten url}
+  spec.homepage      = "https://github.com/bhargavisatpathy/jetfuel_gem"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
