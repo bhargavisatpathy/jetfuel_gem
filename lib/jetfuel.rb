@@ -1,8 +1,21 @@
-require "jetfuel/version"
+require 'jetfuel/version'
+require 'json'
+require 'faraday'
 
-# All code in the gem is namespaced under this module.
-module Jetfuel
+class JetFuel
+  attr_reader :connection
 
-  # The URL of the article about how I start.
-  Url = "http://howistart.org/posts/ruby/1"
+  def initialize(server = 'http://localhost:3000')
+    @connection = Faraday.new(url: "#{server}/api/v1")
+  end
+
+  def shorten(long)
+    params = { url: { long: long } }
+    response_hash = JSON.parse(connection.post('urls', params).body)
+    if response_hash['success']
+      response_hash['url']['short']
+    else
+      'ERROR :' + response_hash['message']
+    end
+  end
 end

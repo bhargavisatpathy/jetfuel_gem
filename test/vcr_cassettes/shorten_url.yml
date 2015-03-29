@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/urls
+    body:
+      encoding: US-ASCII
+      string: url%5Blong%5D=http%3A%2F%2Fjumpstartlab.com
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 201
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      etag:
+      - W/"a45739c641afafb12add0c79040549d9"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - cc11ab70-f7c5-41ec-beea-ac9feec92c6d
+      x-runtime:
+      - '0.004356'
+      server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      date:
+      - Sun, 29 Mar 2015 03:06:00 GMT
+      content-length:
+      - '91'
+      connection:
+      - close
+      set-cookie:
+      - request_method=POST; path=/
+    body:
+      encoding: UTF-8
+      string: '{"url":{"long":"http://jumpstartlab.com","short":"http://localhost:3000/o"},"success":true}'
+    http_version: 
+  recorded_at: Sun, 29 Mar 2015 03:06:00 GMT
+recorded_with: VCR 2.9.3

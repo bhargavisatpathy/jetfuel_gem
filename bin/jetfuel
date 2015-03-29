@@ -2,4 +2,5 @@
 
 require 'jetfuel'
 
-puts Jetfuel::Url
+jf = JetFuel.new 'http://localhost:3000'
+puts jf.shorten "http://jumpstartlab.com"
